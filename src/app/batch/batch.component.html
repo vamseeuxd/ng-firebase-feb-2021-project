@@ -1,0 +1,25 @@
+<p>batch works!</p>
+
+
+<div class="d-flex flex-column">
+    <div class="mb-3 ">
+        <label for= "batchName" class="form-label">Batch Name : </label>
+        <div class="col-auto">
+            <input type="text" [(ngModel)] = "BatchName" class="form-control"  aria-describedby="batch Help" placeholder="Batch Name">
+        </div>
+      </div>
+      <div class="input-group">
+        <span class="input-group-text">First and last name</span>
+        <input type="text" [(ngModel)] = " studentFirstName " aria-label="First name" class="form-control">
+        <input type="text" [(ngModel)] = " studentLastName " aria-label="Last name" class="form-control">
+      </div>
+    <div class="mb-3">
+      <label for="batchTime" class="form-label">Batch Time</label>
+      <input type="Text" [(ngModel)] = "BatchTime" class="form-control"  placeholder="Batch time">
+    </div>
+</div>
+
+    <h1> Batch Name: {{BatchName}}</h1>
+    <h2>Student First Name: {{studentFirstName}}</h2>
+    <h2>Student Last Name: {{studentLastName}}</h2>
+    <h2> Batch Time : {{BatchTime}}</h2>
