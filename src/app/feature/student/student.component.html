@@ -1,1 +1,16 @@
-<p>student works!</p>
+<h3>student works!</h3>
+<div class="stu-table"><table  style="width:500px" class="table-bordered table-stripped table-lg">
+<thead>
+<h4>Student List</h4>
+</thead>
+<tbody>
+<tr>
+   <th>ID</th>
+   <th>Name</th>
+</tr>
+<tr *ngFor="let name of names;let i=index"  >
+<td>{{i}}</td>
+<td>{{name}}</td>
+</tr>
+</tbody>
+</table></div>
