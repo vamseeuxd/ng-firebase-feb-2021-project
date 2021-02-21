@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-firebase-feb-project';
+  studentList=[];
+  cosntructor(){}
+
+  ngOnInit(){
+      this.studentList=['harish','ganesh','vamsee','phani','govind','madhu','revansh','sravan']
+  }
+  
 }
