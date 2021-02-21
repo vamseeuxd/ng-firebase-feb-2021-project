@@ -3,9 +3,9 @@
 
 <div class="d-flex flex-column">
     <div class="mb-3 ">
-        <label for="exampleInputEmail1" class="form-label">Batch Name : </label>
+        <label for= "batchName" class="form-label">Batch Name : </label>
         <div class="col-auto">
-            <input type="email" [(ngModel)] = "BatchName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Batch Name">
+            <input type="text" [(ngModel)] = "BatchName" class="form-control"  aria-describedby="batch Help" placeholder="Batch Name">
         </div>
       </div>
       <div class="input-group">
@@ -13,13 +13,9 @@
         <input type="text" [(ngModel)] = " studentFirstName " aria-label="First name" class="form-control">
         <input type="text" [(ngModel)] = " studentLastName " aria-label="Last name" class="form-control">
       </div>
-    <div class="mb-3 ">
-      <label for="exampleInputEmail1" class="form-label">Batch Name : </label>
-      <input type="email" [(ngModel)] = "BatchName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Batch Name">
-    </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Batch Time</label>
-      <input type="Text" [(ngModel)] = "BatchTime" class="form-control" id="exampleInputPassword1" placeholder="Batch time">
+      <label for="batchTime" class="form-label">Batch Time</label>
+      <input type="Text" [(ngModel)] = "BatchTime" class="form-control"  placeholder="Batch time">
     </div>
 </div>
 
