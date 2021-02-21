@@ -1,16 +1,19 @@
-<h3>student works!</h3>
-<div class="stu-table"><table  style="width:500px" class="table-bordered table-stripped table-lg">
-<thead>
-<h4>Student List</h4>
-</thead>
-<tbody>
-<tr>
-   <th>ID</th>
-   <th>Name</th>
-</tr>
-<tr *ngFor="let name of names;let i=index"  >
-<td>{{i}}</td>
-<td>{{name}}</td>
-</tr>
-</tbody>
-</table></div>
+<div class="container-fluid">
+  <h3>student works!</h3>
+  <div class="table-responsive col-4 offset-4">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center" width="100">ID</th>
+          <th class="text-center" width="150">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let name of names; let i = index">
+          <td class="text-center">{{ i }}</td>
+          <td class="text-center">{{ name }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
