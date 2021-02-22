@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BatchComponent } from './batch/batch.component';
 import { StudentComponent } from './feature/student/student.component';
+import { ArticlesComponent } from './articles/articles.component';
+import { ArticleContentComponent } from './article-content/article-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BatchComponent,
-    StudentComponent
+    StudentComponent,
+    ArticlesComponent,
+    ArticleContentComponent
   ],
   imports: [
     BrowserModule,
