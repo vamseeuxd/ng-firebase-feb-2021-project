@@ -1,0 +1,5 @@
+<p>dashboard works!</p>
+
+<app-userform  (addUser)="addUser($event)"></app-userform>
+<hr>
+<app-user-table [users]="users" (deleteUser)="deleteUser($event)"></app-user-table>

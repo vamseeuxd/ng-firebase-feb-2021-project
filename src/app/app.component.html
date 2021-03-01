@@ -1,2 +1,5 @@
-<h1>App Component works</h1>
+
+<app-header   [gani]="title" appTitle="harish" (onClickLogout)="messageFromChild($event)"></app-header>
+<app-dashboard></app-dashboard>
 <app-student [names]="studentList"></app-student>
+<app-footer></app-footer>

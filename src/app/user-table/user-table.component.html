@@ -1,0 +1,26 @@
+<hr>
+
+
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+<th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users; let sno = index;">
+             <td>{{sno+1}}</td>
+            <td>{{user.fname}}</td>
+            <td>{{user.lname}}</td>
+            <td>
+                <!-- <button type="button" class="btn btn-primary btn-sm">Edit</button> -->
+                <button type="button" (click)="delete(user)"  class="btn btn-danger btn-sm">Delete</button>
+            </td>
+ 
+        </tr>
+
+    </tbody>
+</table>
